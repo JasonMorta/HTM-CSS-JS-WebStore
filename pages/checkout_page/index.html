@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <!-- Bootstrap CDN -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+   <!-- css -->
+
+   <link href="../../allpages.css" rel="stylesheet" type="text/css">
+   <link href="./style.css" rel="stylesheet" type="text/css">
+
+
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"
+      media="all">
+   <link rel="icon" type="image/x-icon" href="../../img/title.png">
+   <title>GT RIMS</title>
+</head>
+
+
+<body>
+   <div class="background-style">
+   </div>
+   <!-- Items Container -->
+   <div class="main-container" id="enter-site">
+
+      <!-- navigation -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+         <div class="container-fluid">
+            <a class="navbar-brand" href="#enter-site">
+
+            </a>
+
+            <div class="container">
+               <div class="topnav">
+                  <a href="../catalogue/catalogue.html">GT RIMS</a>
+                  <a href="../previews/prev.html">Previews</a>
+                  <a href="../shipping/shipping.html">Shipping</a>
+                  <a href="../about/about.html">About</a>
+                  <a href="../cart_page/index.html">CART</a>
+               </div>
+            </div>
+
+         </div>
+
+      </nav>
+      <!-- Main header & Store Name -->
+
+      <h1 class="main-heading "><a class="headingLink" href="../catalogue/catalogue.html">GT RIMS</a></h1>
+      <br>
+      <h1 style="text-align: center;">Checkout</h1>
+      <br>
+      <!-- Main items container / Table -->
+      <section class="checkoutPage">
+
+         <h3>Shipping Details</h3>
+
+         <!-- Shipping details form -->
+         <form class="sheckoutForm" onsubmit="checkShipping()">
+            <div class="row">
+               <div class="col">
+                  <input type="text" class="form-control" placeholder="First name" required>
+               </div>
+               <div class="col">
+                  <input type="text" class="form-control" placeholder="Last name" required>
+               </div>
+            </div>
+            <div class="form-group">
+               <label for="inputAddress">Address</label>
+               <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+            </div>
+            <div class="form-group">
+               <label for="inputAddress2">Address 2</label>
+               <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+               <div class="form-group col-md-6">
+                  <label for="inputCity">City</label>
+                  <input type="text" class="form-control" id="inputCity" required>
+               </div>
+               <div class="form-group col-md-4">
+                  <label for="inputState">Country</label>
+                  <select id="inputState" class="form-control">
+                     <option selected>South Africa</option>
+
+                  </select>
+               </div>
+               <div class="form-group col-md-2">
+                  <label for="inputZip">Zip</label>
+                  <input type="text" class="form-control" id="inputZip" required>
+               </div>
+            </div>
+            <div class="total"></div>
+            <div class="form-group">
+               <h5>Choose a shipping method</h5>
+               <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" value="1000"
+                     class="custom-control-input R1000">
+                  <label class="custom-control-label" for="customRadio1">Same day delivery R1000</label>
+               </div>
+               <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio2" name="customRadio" value="700"
+                     class="custom-control-input R700">
+                  <label class="custom-control-label" for="customRadio2">Over night R700</label>
+               </div>
+               <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio3" name="customRadio" value="100"
+                     class="custom-control-input R100">
+                  <label class="custom-control-label" for="customRadio3">3-5 days R100</label>
+               </div>
+               <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio4" name="customRadio" value="0" class="custom-control-input R0"
+                     required>
+                  <label class="custom-control-label" for="customRadio4">Collection</label>
+               </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Confirm order</button>
+         </form>
+      </section>
+      <br>
+   </div>
+
+   <!-- Back to top button -->
+   <a href="#" class="back-to-top">Top</a>
+
+
+
+   <!-- footer & Email -->
+   <footer>
+      <form>
+         <div class="footer-rim-container">
+            <img class="footer-rim" src="../../img/lokism.png" alt="rims">
+         </div>
+         <h3>Get in touch</h3>
+         <a href="#"><img class="social-icon" src="../../img/fb.svg" alt="fb" style="width: 30px;"></a>
+         <a href="#"><img class="social-icon" src="../../img/whatsapp.svg" alt="whatsapp" style="width: 30px;"></a>
+         <a href="#"> <img class="social-icon" src="../../img/instagram.svg" alt="instagram" style="width: 30px;"></a>
+         <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+               placeholder="Enter email" required>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+         </div>
+
+         <a href="mailto:email@gtrims.com" class="btn btn-primary">Send</a>
+
+      </form>
+      <img class="footer-image" src="../../img/foot.png" alt="tires">
+   </footer>
+   <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+.shippngTable {
+   width: 50%;
+   z-index: 1;
+   margin-top: 50px;
+   border: 2px solid #C22948;
+   box-shadow: 3px 3px 3px #ffffff5e;
+}
+
+.van-image {
+   position: absolute;
+    z-index: 0;
+    right: 0;
+    margin-right: calc(100vw - 90%);
+    top: 19%;
+}
+
+.footer-rim-container {
+
+}
+
+.main-heading {
+   z-index: 2;
+}
+

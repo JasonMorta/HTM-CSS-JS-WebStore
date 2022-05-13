@@ -1,0 +1,343 @@
+/* 
+========================
+product container styles 
+========================
+*/
+
+
+.item-container {
+   display: flex;
+   flex-direction: column;
+   background-color: #ffffff;
+   color: #263238;
+   background-image: url(../../img/bg.png);
+   background-repeat: repeat;
+   background-size: initial;
+   background-position: inherit;
+   margin: 18px;
+   box-shadow: 0.125rem 0.125rem 0.063rem 0px #0000005e, 0.213rem 0.213rem 0.063rem 0px #78909c;
+   border-radius: 3px;
+   border-radius: 3px;
+   text-align: center;
+   flex-wrap: wrap;
+   align-items: center;
+   width: 280px;
+   position: relative;
+   min-width: 280px;
+   height: auto;
+   transition: .3s;
+   float: left;
+   transform: scale(0.9);
+}
+
+.item-container:hover {
+   background-image: none;
+}
+
+.all-items {
+   width: 73%;
+   margin: auto;
+
+
+}
+
+.price {
+   width: 100%;
+   text-align: left;
+   margin: 0;
+   font-family: 'kilsonburg';
+   font-weight: 700;
+}
+
+.description-container {
+   width: 90%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   justify-content: flex-start;
+   padding: 15px 0px;
+   margin: 0;
+}
+
+.h2-heading {
+   margin-bottom: 0px;
+}
+
+/* 
+========================
+Product name-heading
+========================
+*/
+.item-heading {
+   font-family: 'ubuntu light', sans-serif;
+   text-align: left;
+   width: 90%;
+   margin: 0;
+}
+
+.contentContainer {
+   text-align: left;
+   width: 90%;
+}
+
+.p_tagOne {
+   margin: 10px 0px;
+}
+
+/* 
+   ==============================
+   Product Description
+   ==============================
+    */
+
+.description-heading {
+   margin-bottom: 0.625rem;
+}
+
+.img-thumbnail {
+   background-color: transparent;
+   border-bottom: 0px;
+   border-radius: 0;
+   transition: .3s;
+   border: 0;
+   height: 15rem;
+
+}
+
+.img-thumbnail:hover {
+   border-bottom: 5px solid #dee2e6;
+   border-radius: 1.25rem;
+   transition: .3s;
+   border: 0;
+   /* border-bottom: 3px solid #dee2e6; */
+
+}
+
+.item-description {
+   height: 100px;
+   overflow: hidden;
+   overflow-x: hidden;
+   padding-left: 20px;
+}
+
+.item-description:hover {
+   overflow: scroll;
+   overflow-x: hidden;
+}
+
+.item-description li {
+   text-align: left;
+   font-size: 12px;
+}
+
+/* 
+   ================
+   Product Image 
+   ================
+   */
+
+.product-image {
+   width: 230px;
+   filter: brightness(0.5) drop-shadow(2px 4px 2px black);
+   transition: 0.3s;
+   padding: 2px;
+   border: 2px solid #ff000000;
+}
+
+.product-image:hover {
+   width: 240px;
+   filter: brightness(1) drop-shadow(2px 4px 6px black);
+   transition: 0.3s;
+}
+
+/* 
+   ========================
+   Forms
+   ========================
+   */
+.wheel-size {
+   margin: 0;
+   font-size: small;
+}
+
+.form-check {
+   margin-bottom: 0;
+   font-size: small;
+   width: 100%;
+   text-align: left;
+}
+
+.form-select {
+   padding: 5px;
+   font-size: x-small;
+   height: 25px;
+}
+
+/* 
+   ========================
+   Testimonials
+   ========================
+   */
+
+.testamonial {
+   margin-top: 50px;
+}
+
+.content-container {
+   background: linear-gradient(270deg, #50545700, #282729, #50545700);
+   border-top: 3px solid transparent;
+   border-bottom: 2px solid transparent;
+   border-image: linear-gradient(to left, #1d1a1a 0%, #C22948 50%, #1d1a1a 100%) 30 stretch;
+   padding: 16px;
+   margin: 16px 0;
+   color: #c6c6c6;
+}
+
+.content-container:hover {
+   background-color: rgba(128, 128, 128, 0.116);
+}
+
+.test img {
+   float: left;
+   margin-right: 20px;
+   margin-top: 5px;
+}
+
+
+.test span {
+   font-size: 20px;
+   margin-right: 15px;
+   font-family: 'kilsonburg';
+   text-shadow: 1px 1px 4px #ffffff;
+}
+
+.test tr {
+   margin-bottom: 10px;
+}
+
+/* @media (max-width: 500px) {
+   .test {
+      text-align: center;
+   }
+
+   .test img {
+      margin: auto;
+      float: none;
+      display: block;
+   }
+}; */
+
+/* 
+========================
+Cart SVG
+========================
+*/
+
+
+.cartIcon {
+   width: 50px;
+    z-index: 2;
+    position: fixed;
+    right: 0;
+    top: 0;
+    opacity: .3;
+}
+
+.showIcon {
+   filter: drop-shadow(0px 0px 2px white);
+   opacity: 1;
+   transition: .3;
+}
+
+.showIcon:hover {
+   transform: scale(.98);
+   transition: .3;
+}
+
+.showIcon:active {
+   transform: scale(.95);
+   transition: .3;
+}
+
+.shake-bottom {
+   filter: drop-shadow(0px 0px 2px white);
+   opacity: 1;
+   transition: .3;
+	-webkit-animation: shake-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955)  both;
+	        animation: shake-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955)  both;
+}
+
+
+/**
+ * ----------------------------------------
+ * animation shake-bottom
+ * ----------------------------------------
+ */
+ @-webkit-keyframes shake-bottom {
+   0%,
+   100% {
+     -webkit-transform: rotate(0deg);
+             transform: rotate(0deg);
+     -webkit-transform-origin: 50% 100%;
+             transform-origin: 50% 100%;
+   }
+   10% {
+     -webkit-transform: rotate(2deg);
+             transform: rotate(2deg);
+   }
+   20%,
+   40%,
+   60% {
+     -webkit-transform: rotate(-4deg);
+             transform: rotate(-4deg);
+   }
+   30%,
+   50%,
+   70% {
+     -webkit-transform: rotate(4deg);
+             transform: rotate(4deg);
+   }
+   80% {
+     -webkit-transform: rotate(-2deg);
+             transform: rotate(-2deg);
+   }
+   90% {
+     -webkit-transform: rotate(2deg);
+             transform: rotate(2deg);
+   }
+ };
+ @keyframes shake-bottom {
+   0%,
+   100% {
+     -webkit-transform: rotate(0deg);
+             transform: rotate(0deg);
+     -webkit-transform-origin: 50% 100%;
+             transform-origin: 50% 100%;
+   }
+   10% {
+     -webkit-transform: rotate(2deg);
+             transform: rotate(2deg);
+   }
+   20%,
+   40%,
+   60% {
+     -webkit-transform: rotate(-4deg);
+             transform: rotate(-4deg);
+   }
+   30%,
+   50%,
+   70% {
+     -webkit-transform: rotate(4deg);
+             transform: rotate(4deg);
+   }
+   80% {
+     -webkit-transform: rotate(-2deg);
+             transform: rotate(-2deg);
+   }
+   90% {
+     -webkit-transform: rotate(2deg);
+             transform: rotate(2deg);
+   }
+ }
+ 

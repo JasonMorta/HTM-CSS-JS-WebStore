@@ -1,0 +1,17 @@
+.aboutTable {
+   width: 50%;
+   border: 2px solid #C22948;
+   box-shadow: 3px 3px 3px #ffffff5e;
+   color: #c6c6c6 !important;
+}
+
+.van-image {
+   width: 45%;
+   float: right;
+       margin: 0 0 0 10px;
+}
+
+.footer-rim-container {
+   left: 0;
+ 
+}

@@ -1,0 +1,543 @@
+/* 
+Downloaded 100% free from:
+https://www.dafont.com/architype.font?l[]=10&l[]=1 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Sen&display=swap');
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Sen', sans-serif; */
+
+@font-face {
+   font-family: 'architype';
+   src: url(./font/architype.ttf);
+}
+
+@font-face {
+   font-family: 'kilsonburg';
+   src: url(./font/kilsonburg.ttf);
+}
+
+@font-face {
+   font-family: 'ubuntu light';
+   src: url(./font/Ubuntu-Light.ttf);
+}
+
+@font-face {
+   font-family: 'gmc';
+   src: url(./font/gmc.ttf);
+}
+
+@font-face {
+   font-family: 'ressa';
+   src: url(./font/Ressa.ttf);
+}
+
+@font-face {
+   font-family: 'ethnocentric';
+   src: url(./font/ethnocentric.otf);
+}
+
+body {
+   min-width: 350px;
+   background-color: #0f0f11;
+   justify-content: center;
+   min-width: 350px;
+   justify-content: center;
+   color: white;
+   font-family: system-ui, sans-serif;
+}
+
+
+/* 
+Downloaded 100% free from:
+https://www.dafont.com/architype.font?l[]=10&l[]=1 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Sen&display=swap');
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Sen', sans-serif; */
+
+@font-face {
+   font-family: 'architype';
+   src: url(./font/architype.ttf);
+}
+
+@font-face {
+   font-family: 'kilsonburg';
+   src: url(./font/kilsonburg.ttf);
+}
+
+@font-face {
+   font-family: 'ubuntu light';
+   src: url(./font/Ubuntu-Light.ttf);
+}
+
+@font-face {
+   font-family: 'gmc';
+   src: url(./font/gmc.ttf);
+}
+
+@font-face {
+   font-family: 'ressa';
+   src: url(./font/Ressa.ttf);
+}
+
+@font-face {
+   font-family: 'ethnocentric';
+   src: url(./font/ethnocentric.otf);
+}
+
+
+.background-style {
+   background-image: url(./img/squares.svg);
+   background-repeat: repeat;
+   background-position: inherit;
+   position:fixed;
+   width: 100%;
+   background-size: 60px;
+   height: 100%;
+   top: 0;
+   left: 0;
+   overflow: auto;
+   animation: bkc 5s infinite;
+   z-index: -2;
+   background-blend-mode: luminosity;
+}
+
+@keyframes bkc {
+   0% {background-color:#16181b;}
+   50% {background-color: #ffffff;}
+    100% { background-color:#16181b;}
+ }
+ 
+
+
+.main-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+
+/* 
+========================
+Nav bar
+========================
+*/
+/* bootstrap nav section */
+.bg-dark {
+   width: 100%;
+   height: 46px;
+}
+
+/* Fixed nav menu */
+.container {
+   position: fixed;
+   width: 100% !important;
+   max-width: 100%;
+   top: 0px;
+   left: 0;
+   z-index: 2;
+   opacity: .9;
+   padding: 0;
+   transition: .3s;
+   overflow: hidden;
+   background-color: #212529;
+   margin: 0;
+}
+
+@media only screen and (max-width: 935px) {
+.container {
+   
+   width: 88px;
+}
+}
+
+/* Navbar links */
+.topnav a {
+   float: left;
+   color: #f2f2f2;
+   text-align: center;
+   padding-left: 0px;
+   text-decoration: none;
+   font-size: 17px;
+   width: 77px;
+   padding: 10px 0px 10px 10px;
+   font-size: 17px;
+   transition: .3s ease-in;
+
+}
+
+.topnav a:hover {
+   transition: .1s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+   color: #ffffff;
+   font-weight: 500;
+}
+
+.navbar-brand {
+   margin-top: 20px;
+}
+
+.container-fluid {
+   height: 40px;
+}
+
+
+/* 
+========================
+Typography
+========================
+*/
+
+.main-heading {
+   position: sticky;
+   top: -10px;
+   z-index: 3;
+   font-family: 'ethnocentric', sans-serif;
+   text-align: center;
+   font-size: 3.35rem;
+   animation: colorMove 20s ease infinite;
+   -webkit-animation: colorMove 20s ease infinite;
+   background: linear-gradient(270deg, #ff0000, #050000, #ff0000);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -webkit-text-stroke: 0.1rem #607d8b;
+   background-size: 300% 300%;
+   transition: .3;
+
+}
+
+.headingLink {
+   text-decoration: none ;
+   color: #b5b5b5;
+   transition: .6s;
+}
+
+
+.headingLink:hover {
+
+   color: #fff;
+}
+
+
+@media only screen and (max-width: 520px) {
+   .main-heading {
+      left: 80%;
+      font-size: 2.75rem;
+   }
+}
+
+@keyframes colorMove {
+   0% {
+      background-position: 0% 50%
+   }
+
+   50% {
+      background-position: 100% 50%
+   }
+
+   100% {
+      background-position: 0% 50%
+   }
+
+}
+
+
+ul li {
+   list-style-type: circle;
+}
+
+h1,
+h2 {
+   font-family: 'kilsonburg';
+   color: #c6c6c6;
+}
+
+h3, th {
+   font-family: 'ubuntu light';
+   color: #c6c6c6!important;
+}
+
+h5 {
+   font-family: 'kilsonburg';
+}
+
+p {
+   font-family: 'Sen', sans-serif;
+}
+
+tr {
+   font-size: 1.25rem;
+}
+
+/* 
+========================
+Footer
+========================
+*/
+
+footer {
+   background-color: #212529;
+   display: flex;
+   flex-direction: row;
+   align-items: flex-end;
+   justify-content: space-between;
+
+   width: 100%;
+}
+
+.btn-primary a {
+   text-decoration: none;
+   color: white;
+
+}
+
+form {
+   margin: 5px;
+   margin-left: 14%;
+}
+form a {
+   color: transparent;
+}
+
+.btn-primary {
+   color: #c6c6c6;
+}
+
+
+.footer-image {
+   filter: drop-shadow(2px 4px 6px black);
+   opacity: 0.5;
+   margin-right: 10px;
+
+}
+
+.footer-rim-container {
+   position: absolute;
+   width: 124px;
+   height: 204px;
+   overflow: hidden;
+}
+
+.footer-rim {
+   position: absolute;
+   width: 204px;
+   left: -104px;
+   top: 0px;
+   transition: .3s;
+   -webkit-animation: rotate-90-cw 180s linear infinite both;
+   animation: rotate-90-cw 180s linear infinite both;
+   opacity: .5;
+
+}
+
+@media only screen and (max-width: 730px) {
+   .footer-rim{
+      display: none;
+   }
+
+   .footer-image {
+      width: 132px;
+   }
+}
+
+
+.footer-rim:hover {
+   left: -92px;
+}
+
+.form-control:focus {
+   border-color: #bf2847;
+   box-shadow: 0 0 0 0.25rem rgb(177 39 67 / 29%);
+}
+
+.btn-primary {
+   background-color: #c02948;
+   border-color: #4f1e28;
+}
+
+.btn-primary:hover {
+   background-color: #4f1e28;
+   border-color: #c02948;
+}
+
+.btn-primary:focus {
+   background-color: #4f1e28;
+   border-color: #c02948;
+   box-shadow: 0 0 0 0.25rem rgb(153 38 61);
+
+}
+
+.btn-primary:active {
+   background-color: #4f1e28;
+   border-color: #c02948;
+}
+
+.social-icon {
+   transition: .2s;
+}
+
+.social-icon:hover {
+   transform: translateY(-3px);
+}
+
+/**
+ * ----------------------------------------
+ * animation rotate-90-cw
+ * ----------------------------------------
+ */
+@-webkit-keyframes rotate-90-cw {
+   0% {
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+   }
+
+   100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+   }
+}
+
+@keyframes rotate-90-cw {
+   0% {
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+   }
+
+   100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+   }
+}
+
+/* 
+========================
+to top
+========================
+*/
+
+.back-to-top {
+   color: #e91e63;
+   border: 2px solid #be2947;
+   width: 40px;
+   height: 40px;
+   border-radius: 44% 56% 37% 63% / 73% 71% 29% 27%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-decoration: none;
+   position: fixed;
+   bottom: 25px;
+   opacity: .5;
+   right: 30px;
+   transition: .3s;
+   background: linear-gradient(to bottom, #16222a, #3a6073);
+   z-index: 1;
+
+}
+
+.back-to-top:hover {
+   position: fixed;
+   color: white;
+
+   /* https://9elements.github.io/fancy-border-radius/ */
+   border-radius: 30% 70% 69% 31% / 25% 54% 46% 75%  ;
+
+
+}
+
+
+/* 
+========================
+Buttons
+========================
+*/
+ 
+
+        .myBtn {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            width: fit-content;
+            text-align: center;
+            display: inline-block;
+            border-radius: 3px;
+            font-size: 15px;
+            margin: 10px 10px;
+            transition-duration: 0.3s;
+            cursor: pointer;
+        }
+        .myBtn {
+         text-decoration: none;
+        }
+
+        .myBtn:active {
+         transform: scale(.9);
+        }
+        
+        .myBtn1 {
+          background-color: white; 
+          color: black; 
+          border: 2px solid #4CAF50;
+        }
+        
+        .myBtn1:hover {
+          background-color: #4CAF50;
+          color: white;
+        }
+        
+        .myBtn2 {
+          background-color: white; 
+          color: black; 
+          border: 2px solid #C22948;
+        }
+        
+        .myBtn2:hover {
+          background-color: #C22948;
+          color: white;
+        }
+
+        
+        
+        .myBtn3 {
+          background-color: white; 
+          color: black; 
+          border: 2px solid #f44336;
+        }
+        
+        .myBtn3:hover {
+          background-color: #f44336;
+          color: white;
+        }
+        
+        .myBtn4 {
+          background-color: white;
+          color: black;
+          border: 2px solid #e7e7e7;
+        }
+        
+        .myBtn4:hover {background-color: #e7e7e7;}
+        
+        .myBtn5 {
+          background-color: white;
+          color: black;
+          border: 2px solid #555555;
+        }
+        
+        .myBtn5:hover {
+          background-color: #555555;
+          color: white;
+        }
+        
+
+
+.img-thumbnail {
+   background-color: transparent!Important;
+   border-width: .25rem!important;
+}
+
+.form-control {
+   background-color: #c6c6c6!important;
+}
